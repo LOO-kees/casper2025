@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/* login.css */
+
+#log_s{
+    background: #d5e2f2; /* 연한 파란톤 배경 */
+  margin: 0 auto;
+  padding: 153px 0px;
+}
+
+/* 폼 전체 박스 */
+.login_form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+
+.login_form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.login_form legend {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* 라벨 + 인풋 서식 -> 라벨에 글씨를 쓰지 않았으므로 필요 없는 서식이다.*/
+/* .login_form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+} */
+
+.login_form input[type="text"],
+.login_form input[type="password"] {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 아이디 저장 체크박스 */
+.save_id {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.save_id input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+/* 로그인 버튼 */
+.btn_login {
+  width: 100%;
+  background: #0055d4; /* 파란색 계열 */
+  color: #fff;
+  padding: 20px 0;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn_login:hover {
+  background: #003c9b; 
+}
+
+/* 하단 링크 */
+.link_wrap {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.link_wrap a {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  text-decoration: none;
+}
+.link_wrap a:not(:last-child)::after {
+  content: " |";
+  margin: 0 8px;
+  color: #666; /* 파이프색 */
+}
+.link_wrap a:hover {
+  text-decoration: underline;
+}

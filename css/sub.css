@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+/* header 부분 */
+header {
+  position: static;
+}
+header i.fas {
+  color: #333;
+}
+.gnb > ul > li > a {
+  color: #333;
+}
+
+/* -------------------------- */
+/* 서브 상단 영역 (sub_top)   */
+/* -------------------------- */
+.sub_top {
+  background: url("../images/bg-main-test-driving.jpg") 100%; height: 400px;
+  color: var(--m_bg_color);text-align: center;
+}
+
+.sub_top nav{text-align: left;line-height: 150px;padding-left: 200px;font-size: var(--f_size2);
+}
+
+.sub_top > h2{font-size: 40px;padding: 20px 0px;}
+.sub_top > p{font-size: 20px;}
+
+/*----------------------*/
+
+.felid{}
+
+/* -------------------------- */
+/* 시승신청 폼 영역           */
+/* -------------------------- */
+.online_reserve {
+  width: 1000px;       /* 폼 영역 최대 폭 */
+  margin: 0 auto;      /* 폼 박스를 페이지 가운데 배치 */
+  padding: 50px 0;
+  text-align: left;    /* 내부 텍스트(라벨, input)는 왼쪽 정렬 */
+}
+
+/* 화면낭독기용 숨김 (h2) */
+.hide {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+}
+
+/* fieldset과 legend 스타일 */
+.online_reserve fieldset {
+  margin: 0 auto;    /* fieldset 박스 자체는 가운데 배치 */
+  display: block;
+  width: 80%;
+  border: none;      /* 테두리 제거 */
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: left;  /* 내부 라벨/입력칸 왼쪽 정렬 */
+}
+.online_reserve legend {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center; /* legend만 가운데 정렬 */
+  padding: 0 10px;
+}
+
+/* 각 항목(고객명, 휴대폰 등) */
+.online_reserve form div {
+  margin-bottom: 20px;
+  text-align: left;  /* 라벨, input 왼쪽 정렬 */
+  margin-left: 80px;
+}
+
+/* 라벨과 입력창 배치 */
+.online_reserve label {
+  display: inline-block;
+  width: 120px;
+  font-weight: bold;
+  text-align: right;   /* 라벨 문구 오른쪽 정렬 */
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.online_reserve input[type="text"],
+.online_reserve input[type="email"],
+.online_reserve input[type="date"],
+.online_reserve select {
+  display: inline-block;
+  width: 300px;
+  padding: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+/* 라디오 버튼 간격 최소화 */
+.online_reserve input[type="radio"] {
+  margin-right: 3px; /* 필요시 0으로 줄일 수 있음 */
+}
+
+/* 버튼 스타일 */
+.btn_group {
+  text-align: center;
+  margin-top: 30px;
+}
+.btn_group input[type="submit"] {
+  /* 버튼 배경색 = var(--s_color01), 글씨색 = var(--m_bg_color) */
+  background-color: var(--s_color01);
+  color: var(--m_bg_color);
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+}
+.btn_group input[type="reset"] {
+  /* 버튼 배경색 = var(--f_color1), 글씨색 = var(--m_bg_color) */
+  background-color: var(--f_color1);
+  color: var(--m_bg_color);
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+}
+
+/* 반응형(예: 768px 이하)에서 폭 줄이기 */
+@media (max-width: 768px) {
+  .online_reserve {
+    width: 90%;
+  }
+  .online_reserve fieldset {
+    width: 100%;
+  }
+  .online_reserve label {
+    width: 100px;
+  }
+}
+
+
+/*qna.php*/
+
+.con {
+  display: none;
+}
